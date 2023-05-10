@@ -1,38 +1,114 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  background: #040404;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  position: absolute;
+  width: 1340px;
+  height: 1024px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  
+}
+#imgTheMask{
+  position: absolute;
+  width: 286px;
+  height: 370px;
+  left: 18px;
+  top: 26px;
 }
 
-.App-link {
-  color: #61dafb;
+#imgLogan{
+  position: absolute;
+  width: 278px;
+  height: 370px;
+  left: 26px;
+  top: 419px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#imgJoker{
+  position: absolute;
+  width: 281px;
+  height: 370px;
+  left: 23px;
+  top: 814px;
+  clip: rect(0px, 370px, 210px, 0px);
 }
+
+#imgSmile{
+  position: absolute;
+  width: 277px;
+  height: 345px;
+  left: 323px;
+  top: 0px;
+}
+
+#imgIT{
+  position: absolute;
+  width: 273px;
+  height: 370px;
+  left: 327px;
+  top: 370px;
+}
+
+#imgPanico{
+  position: absolute;
+  width: 273px;
+  height: 370px;
+  left: 327px;
+  top: 765px;
+  clip: rect(0px, 370px, 259px, 0px);
+}
+
+#imgShazan{
+  position: absolute;
+  width: 273px;
+  height: 370px;
+  left: 623px;
+  top: 20px;
+  mix-blend-mode: screen;
+}
+
+#imgEstranho{
+  position: absolute;
+  width: 267px;
+  height: 341px;
+  left: 623px;
+  top: 415px;
+}
+
+#imgGuardiao{
+  position: absolute;
+  width: 259px;
+  height: 341px;
+  left: 626px;
+  top: 780px;
+  mix-blend-mode: lighten;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
