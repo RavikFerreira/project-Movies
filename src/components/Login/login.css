@@ -1,5 +1,6 @@
 .login{
-    font-family: 'Raleway';
+    text-align: center;
+    font-family: 'fantasy';
     font-style: 'Raleway';
     font-size: 30px;
     line-height: 42px;
@@ -19,6 +20,10 @@
     border-radius: 20px ;
 }
 
+#botao{
+    background-color: rgb(70, 125, 70);
+    color: azure;
+}
 
 
 
