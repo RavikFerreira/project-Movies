@@ -6,11 +6,11 @@ return (
     <div className="login">
         <h2>Fazer login</h2>
         <p>Olá, bem-vindo ao ReelsReview!</p>
-        <input type='text'></input>
+        <input class="input" type='text' placeholder='Email' required="required"></input>
         <br/>
-        <input type='password'></input>
+        <input class="input" id="senha" type='password' placeholder='Senha' required="required"></input>
         <br/>
-        <button id='botao'>login</button>
+        <button id='botao'>Login</button>
     </div>
 );
 }

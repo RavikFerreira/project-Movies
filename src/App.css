@@ -3,85 +3,85 @@
   min-height: 100vh;
   display: flex;
   position: absolute;
-  width: 1294px;
-  height: 1024px;
+  width: 100%;
+  height: 100%;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   overflow: hidden;
   
 }
 #imgTheMask{
   position: absolute;
-  width: 286px;
-  height: 370px;
-  left: 18px;
+  width: 240px;
+  height: 270px;
+  left: 25px;
   top: 26px;
 }
 
 #imgLogan{
   position: absolute;
-  width: 278px;
-  height: 370px;
-  left: 26px;
-  top: 419px;
+  width: 240px;
+  height: 270px;
+  left: 25px;
+  top: 310px;
 }
 
 #imgJoker{
   position: absolute;
-  width: 281px;
-  height: 370px;
-  left: 23px;
-  top: 814px;
+  width: 240px;
+  height: 270px;
+  left: 25px;
+  top: 595px;
   clip: rect(0px, 370px, 210px, 0px);
 }
 
-#imgSmile{
+#imgShazan{
   position: absolute;
-  width: 277px;
-  height: 345px;
-  left: 323px;
+  width: 240px;
+  height: 270px;
+  left: 285px;
   top: 0px;
 }
 
 #imgIT{
   position: absolute;
-  width: 273px;
-  height: 370px;
-  left: 327px;
-  top: 370px;
+  width: 240px;
+  height: 270px;
+  left: 285px;
+  top: 285px;
 }
 
 #imgPanico{
   position: absolute;
-  width: 273px;
-  height: 370px;
-  left: 327px;
-  top: 765px;
+  width: 240px;
+  height: 270px;
+  left: 285px;
+  top: 570px;
   clip: rect(0px, 370px, 259px, 0px);
 }
 
-#imgShazan{
+#imgSmile{
   position: absolute;
-  width: 273px;
-  height: 370px;
-  left: 623px;
+  width: 240px;
+  height: 270px;
+  left: 545px;
   top: 20px;
   mix-blend-mode: screen;
 }
 
 #imgEstranho{
   position: absolute;
-  width: 267px;
-  height: 341px;
-  left: 623px;
-  top: 415px;
+  width: 240px;
+  height: 270px;
+  left: 545px;
+  top: 305px;
 }
 
 #imgGuardiao{
   position: absolute;
-  width: 259px;
-  height: 341px;
-  left: 626px;
-  top: 780px;
+  width: 240px;
+  height: 270px;
+  left: 545px;
+  top: 590px;
   mix-blend-mode: lighten;
 }
 
