@@ -1,5 +1,5 @@
 .App {
-  background: #040404;
+  background-image: url(./imagens/Netflix-Background.jpg);
   min-height: 100vh;
   display: flex;
   position: absolute;
@@ -7,84 +7,24 @@
   height: 100%;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   overflow: hidden;
-  
-}
-#imgTheMask{
-  position: absolute;
-  width: 240px;
-  height: 270px;
-  left: 25px;
-  top: 26px;
 }
 
-#imgLogan{
+.logo{
+  width: 500px;
+  height: 200px;
   position: absolute;
-  width: 240px;
-  height: 270px;
-  left: 25px;
-  top: 310px;
-}
+  top: 12%;
+  left: 12%;
 
-#imgJoker{
+}
+.texto{
+  text-shadow: 0px 4px 4px rgba(1, 1, 1, 1.50);;
+  color: white;
   position: absolute;
-  width: 240px;
-  height: 270px;
-  left: 25px;
-  top: 595px;
-  clip: rect(0px, 370px, 210px, 0px);
-}
+  top: 33%;
+  left: 16%;
 
-#imgShazan{
-  position: absolute;
-  width: 240px;
-  height: 270px;
-  left: 285px;
-  top: 0px;
 }
-
-#imgIT{
-  position: absolute;
-  width: 240px;
-  height: 270px;
-  left: 285px;
-  top: 285px;
-}
-
-#imgPanico{
-  position: absolute;
-  width: 240px;
-  height: 270px;
-  left: 285px;
-  top: 570px;
-  clip: rect(0px, 370px, 259px, 0px);
-}
-
-#imgSmile{
-  position: absolute;
-  width: 240px;
-  height: 270px;
-  left: 545px;
-  top: 20px;
-  mix-blend-mode: screen;
-}
-
-#imgEstranho{
-  position: absolute;
-  width: 240px;
-  height: 270px;
-  left: 545px;
-  top: 305px;
-}
-
-#imgGuardiao{
-  position: absolute;
-  width: 240px;
-  height: 270px;
-  left: 545px;
-  top: 590px;
-  mix-blend-mode: lighten;
-}
-
 
 
 
