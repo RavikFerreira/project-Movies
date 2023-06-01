@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       
       <img className='logo' src={reelsreview}></img>
-      <h2 className='texto'>SEU SITE DE RESENHA DE FILMES</h2>
+      <p className='texto'> <b>SEU SITE DE RESENHA DE FILMES</b></p>
       <Login/>
     </div>
     
