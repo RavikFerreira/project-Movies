@@ -4,7 +4,7 @@
   display: flex;
   position: absolute;
   width: 100%;
-  height: auto;
+  height: 100%;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   overflow: hidden;
 }
@@ -25,7 +25,7 @@
   left: 12.7%;
   word-break: break-all;
   white-space: nowrap;
-  font-size: 1.76vw;
+  font-size: 1.1vw;
 
 
 }
