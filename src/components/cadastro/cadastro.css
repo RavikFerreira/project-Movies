@@ -14,32 +14,38 @@
     width: 100%;
 }
 
+#tituloc{
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+}
+
+#pc{
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+.nomesobrenome{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 26px;
+}
 #nome{
     border-radius: 20px;
     padding: 19px;
     outline: unset;
     width: 23%;
+<<<<<<< HEAD
+=======
+    border: none;
+
+>>>>>>> 693e7c25afd2f0cdc67884e0fbdfad75a5b2818e
 }
 #sobrenome{
     border-radius: 20px;
     padding: 19px;
     outline: unset;
     width: 23%;
-}
-#confirmarEmail{
-    margin-top: 15px;
-    border-radius: 20px;
-    padding: 20px;
-    outline: unset;
-    width: 50%;
-}
-#tituloc{
-    color: rgb(255, 255, 255);
-    font-size: 40px;
-}
-#pc{
-    font-size: 20px;
-    color: rgb(255, 255, 255);
+    border: none;
 }
 
 #emailc{
@@ -48,14 +54,27 @@
     padding: 20px;
     outline: unset;
     width: 50%;
+    border: none;
 }
+
+#confirmarEmail{
+    margin-top: 15px;
+    border-radius: 20px;
+    padding: 20px;
+    outline: unset;
+    width: 50%;
+    border: none;
+}
+
 #senhac{
     border-radius: 20px;
     margin-top: 15px;
     padding: 20px;
     outline: unset;
     width: 50%;
+    border: none;
 }
+
 #cadastrar{ background-color: rgb(255, 0, 0);
     color: rgb(255, 255, 255);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -67,7 +86,9 @@
     border-radius: 20px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.10);
     margin-top: 40px;
+    border: none;
 }
+
 #pc2{
     font-size: 20px;
     color: rgb(255, 255, 255);
