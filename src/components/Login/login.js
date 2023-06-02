@@ -1,12 +1,18 @@
-import React from 'react';
+import React, { useState, useEffect, useButton } from 'react';
 import './login.css';
 import { Link } from 'react-router-dom';
 import reelsreview from '../imagens/reelsreview.png';
 
 export default function login() {
+
+        const button = useButton();
+
+        const buttonRouter = () => {
+            button.push("./home/home");
+        };
+    }
+
 return (
-    
-        
     <div className="back">
         <img className='logo' src={reelsreview}></img>
         <p className='texto'><b>SEU SITE DE RESENHA DE FILMES</b></p>
@@ -16,10 +22,9 @@ return (
             <p id='p'>Olá, bem-vindo ao ReelsReview!</p>
             <input id="email" type='text' placeholder='Email' required="required"></input>
             <input id="senha" type='password' placeholder='Senha' required="required"></input>
-            <button id='botao'>Login</button><br/>
+            <button id='botao' onClick={buttonRouter} >Login</button><br/>
             <p id='p2'>Não tem conta? <Link to='/cadastro'>Criar conta.</Link></p>
             
         </div>
     </div>
 );
-}
