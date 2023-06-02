@@ -7,16 +7,18 @@ export default function Cadastro(){
         <div className="backcadastro">
             <div className="cadastro">
                 <h2 id="tituloc">Criar conta</h2>
-                <p id="pc">Por favor preencha os campos!</p>
+                <p id="pc">Preencha os campos com seus dados:</p>
                 
-                <input id="nome" type='text' placeholder='Nome' required="required"></input>
-                <input id="sobrenome" type='text' placeholder='Sobrenome' required="required"></input>
+                <div className="nomesobrenome">
+                    <input id="nome" type='text' placeholder='Nome' required="required"></input>
+                    <input id="sobrenome" type='text' placeholder='Sobrenome' required="required"></input>
+                </div>
                 <input id="emailc" type='text' placeholder='Email' required="required"></input>
                 <input id="confirmarEmail" type='text' placeholder='Confirmar email' required="required"></input>
                 <input id="senhac" type='password' placeholder='Senha' required="required"></input>
                 
                 <button id='cadastrar'>Cadastrar</button><br/>
-                <p id='pc2'>Já tem conta? <Link to={"/"}>Login.</Link></p>
+                <p id='pc2'>Já tem conta? <Link to={"/"}>Fazer login.</Link></p>
             </div>
             
         </div>
