@@ -5,15 +5,12 @@
     width: 100%;
     height: 100%;
     background-size: cover;
-    justify-content: center;
-    overflow: hidden;
-    min-height: 100vh;
     
 }
 .cadastro{
     text-align: center;
     position: absolute;
-    left: 13%;
+    width: 100%;
 }
 #tituloc{
     color: rgb(255, 255, 255);
@@ -29,7 +26,7 @@
     border-radius: 20px;
     padding: 20px;
     outline: unset;
-    width: 38%;
+    width: 38.5%;
     
 }
 #confirmarEmail{
@@ -52,7 +49,7 @@
     border-radius: 20px;
     padding: 20px;
     outline: unset;
-    width: 38%;
+    width: 38.5%;
 }
 #senhac{
     border-radius: 20px;
