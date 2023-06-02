@@ -1,18 +1,10 @@
-import React, { useState, useEffect, useButton } from 'react';
+import React from 'react';
 import './login.css';
 import { Link } from 'react-router-dom';
 import reelsreview from '../imagens/reelsreview.png';
 
 export default function login() {
-
-        const button = useButton();
-
-        const buttonRouter = () => {
-            button.push("./home/home");
-        };
-    }
-
-return (
+    return (
     <div className="back">
         <img className='logo' src={reelsreview}></img>
         <p className='texto'><b>SEU SITE DE RESENHA DE FILMES</b></p>
@@ -27,4 +19,5 @@ return (
             
         </div>
     </div>
-);
+    );
+}
