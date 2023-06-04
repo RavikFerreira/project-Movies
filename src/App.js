@@ -3,12 +3,12 @@ import { Route, Routes } from 'react-router-dom';
 
 import './App.css';
 
-import Login from "./components/Login/login";
-import Cadastro from "./components/cadastro/cadastro"
-import Home from "./components/home/home";
-import Pesquisa from './components/Pesquisa/pesquisa';
-import Filme from './components/filme/filme';
-import NavBar from './components/home/NavBar';
+import Login from './Login/login'
+import NavBar from './components/NavBar/NavBar';
+import Cadastro from './cadastro/cadastro';
+import Home from './home/home';
+import Pesquisa from './Pesquisa/pesquisa';
+import Filme from './filme/filme';
 
 function App() {
   return (
