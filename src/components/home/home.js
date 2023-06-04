@@ -2,33 +2,34 @@ import React, { useEffect, useState } from "react";
 import "./home.css";
 import NavBar from "./NavBar";
 
+const apiUrl = process.env.REACT_APP_API;
+const apiKey = process.env.REACT_APP_API_KEY;
+
 export default function Home(){
-    const [filmes, setFilmes] = useState([]);
+    const [melhoresFilmes, setMelhoresFilmes] = useState([]);
+
+    const getMelhoresFilmes = async(url) => {
+        const response =  await fetch(url);
+        const dados = await response.json();
+        console.log(dados);
+        setMelhoresFilmes(dados.results);
+    };
 
     useEffect(() => {
-        fetch(`https://api.themoviedb.org/3/movie/popular?api_key=YOUR_API_KEY`)
-        .then(response => response.json())
-        .then( data => {
-            setFilmes(data.results);
-        })
-        .catch(error => {
-            console.error(error);
-        });
+
+        const topRated = `${apiUrl}top_rated?${apiKey}`;
+        console.log(topRated);
+        getMelhoresFilmes(topRated);
+     
     },[]);
             
     return(
+
         <div className="backhome">
-            <NavBar/>
-            <h1 id="textoH">Melhores Filmes: </h1>
-            <ul id="tela">
-                {filmes ? (
-                    filmes.map(filme => (
-                        <li key={filme.id}>{filme.title}</li>
-                    ))
-                ):(
-                    <li>Loading....</li>
-                )}
-            </ul>
+            <NavBar />
+            <div className="filmes_container">
+                {melhoresFilmes && melhoresFilmes.map((filme) => <p>{filme.title}</p>)}
+            </div>
         </div>
     );
-}
+};
