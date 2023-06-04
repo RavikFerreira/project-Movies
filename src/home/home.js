@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./home.css";
 import NavBar from "../components/NavBar/NavBar";
 import axios from "axios";
+import FilmesCard from "../components/FilmeCard/FilmeCard";
 
 export default function Home(){
 
@@ -34,12 +35,12 @@ export default function Home(){
             <NavBar />
             <div className="filmes_container">
                 <h2>Melhores Filmes:</h2>
-                <ul>
-                     {melhoresFilmes.length > 0 && melhoresFilmes.map((filme) => (
-                    <li key={filme.id}>{filme.title}</li>
-                ))}
+                {melhoresFilmes.length === 0 && <p>Carregando...</p>}
+                {melhoresFilmes.length > 0 && melhoresFilmes.map((filme) => 
+                <FilmesCard key={filme.id} filme={filme}/>
+                )}
 
-                </ul>
+                
             </div>
         </div>
     );
