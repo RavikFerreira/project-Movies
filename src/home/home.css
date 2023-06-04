@@ -1,20 +1,63 @@
 .backhome{
     background-color: black;
-    width: 100%;
-    height: auto;
-    position: absolute;
+    max-width: 100%;
+}
+.title{
+    color: white;
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 2rem 0 1rem;
+    
+}
+.title .query-text{
+    color: rgb(154, 3, 3);
+
+}
+.filmes_container{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.filmes_container div{
+    width: 30%;
+    color: white;
+    margin-bottom: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: #250101;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.filmes_container img{
+    max-width: 100%;
+}
+
+.filmes_container img,
+.filmes_container div h2,
+.filmes_container div p{
+    margin-bottom: .5rem;
+}
+
+.filmes_container svg{
+    color: yellow;
+}
+
+.filmes_container div a{
+    text-decoration: none;
+    background-color: rgb(255, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 4px;
+    color: rgb(255, 255, 255);
+    padding: .5rem;
+    text-align: center;
+    transition: 0.4s;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
-#textoH{
-    color: aliceblue;
-    left: 5%;
-    position: absolute;
-}
-
-#tela{
-    color: aliceblue;
-    position: absolute;
-    top: 15%;
-    left: 5%;
+.filmes_container div a:hover{
+    background-color: transparent;
+    color: rgb(98, 0, 0);
 }

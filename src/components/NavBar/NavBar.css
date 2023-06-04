@@ -1,57 +1,66 @@
 .NavBar{
     display: flex;
     background-color: rgb(255, 0, 0);
-    font-weight: bold;
+    justify-content: space-between;
+    align-items: center;
+    padding: .1rem 1rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.10);
 }
 
-a{
+.NavBar p a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: .5rem;
     font-size: 25px;
+    color: rgb(255, 255, 255);
+}
+
+.NavBar p a:hover{
+    background-color: transparent;
+    color: rgb(98, 0, 0);
+}
+
+.NavBar form{
+    display: flex;
+    gap: .5rem;
+    position: relative;
+    left: 20%;
+}
+
+.NavBar input {
+    padding: .1rem .3rem;
+    border-radius: 3px;
+    border: none;
+}
+.NavBar form button{
+    background-color: rgb(255, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    padding: .2rem;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: o.4s;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.NavBar form button:hover{
+    background-color: transparent;
+    color: rgb(98, 0, 0);
+    
+}
+
+#sair{
     text-decoration: none;
     color: rgb(255, 255, 255);
-}
-#pnav:hover{
-    color: rgb(97, 12, 12);
-}
-#pnav{
-    position: relative;
-    left: 10%;
-}
-
-#buscar{
-    top: 20px;
-    left: 68.5%;
-    position: absolute;
-    padding: 2px;
-    border-radius: 8px;
-    outline: unset;
-}
-
-#buscarB{
-    background-color: rgb(255, 0, 0);
-    color: rgb(255, 255, 255);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    top: 20px;
-    font-size: 15px;
-    left: 80%;
-    position: absolute;
-    border-radius: 8px;
-}
-
-#buscarB:hover{
-    color: rgb(97, 12, 12);
-}
-#sair{
-    position: absolute;
-    background-color: rgb(255, 0, 0);
-    color: rgb(255, 255, 255);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 25px;
-    left: 93%;
-    border: none;
-    top: 15px;
 }
 #sair:hover{
-    color: rgb(97, 12, 12);
+    background-color: transparent;
+    color: rgb(98, 0, 0);
 }
+
+

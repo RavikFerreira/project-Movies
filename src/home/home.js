@@ -33,8 +33,8 @@ export default function Home(){
 
         <div className="backhome">
             <NavBar />
-            <div className="filmes_container">
-                <h2>Melhores Filmes:</h2>
+                <h2 className="title">Melhores Filmes:</h2> 
+                <div className="filmes_container">
                 {melhoresFilmes.length === 0 && <p>Carregando...</p>}
                 {melhoresFilmes.length > 0 && melhoresFilmes.map((filme) => 
                 <FilmesCard key={filme.id} filme={filme}/>

@@ -7,7 +7,7 @@ export default function FilmesCard({filme, showLink = true}){
         <div>
             <>
             <img src={`https://image.tmdb.org/t/p/w500${filme.poster_path}`} alt={filme.title} /><h2>{filme.title}</h2><p>
-                <FaStar /> {filme.vote_average}
+                <FaStar /> {filme.vote_average}<br/><br/>
                 {showLink && <Link to={`/filme/${filme.id}`}>Detalhes</Link>}
             </p></>
         </div>
