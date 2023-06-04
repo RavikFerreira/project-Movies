@@ -17,7 +17,7 @@ export default function Cadastro(){
                 <input id="confirmarEmail" type='text' placeholder='Confirmar email' required="required"></input>
                 <input id="senhac" type='password' placeholder='Senha' required="required"></input>
                 
-                <button id='cadastrar'>Cadastrar</button><br/>
+                <button id='cadastrar'><Link to='/filmes'><b>Cadastrar</b></Link></button><br/>
                 <p id='pc2'>Já tem conta? <Link to={"/"}>Fazer login.</Link></p>
             </div>
             

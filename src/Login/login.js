@@ -13,7 +13,7 @@ export default function login() {
                 <input id="email" type='text' placeholder='Digite seu e-mail' required="required"></input>
                 <input id="senha" type='password' placeholder='Digite sua senha' required="required"></input>
             </div>
-            <button id='botao' >Login</button><br/>
+            <button id='botao'><Link to='/filmes'>Login</Link></button><br/>
             <p id='p2'>Não tem conta? <Link to='/cadastro'>Criar conta.</Link></p>
             
         </div>
