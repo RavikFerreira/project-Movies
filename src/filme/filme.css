@@ -1,0 +1,41 @@
+body{
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.filme-page{
+    background-color: rgb(39, 2, 2);
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 600px;
+}
+.filme-page img{
+    margin: 2rem;
+}
+.info{
+    position: relative;
+    text-align: left;
+}
+#descricao{
+    position: relative;
+    text-align: left;
+    
+}
+
+.infodescricao{
+    text-align: center;
+    max-width: 600px;
+    position: relative;
+    line-height: 1.4rem;
+    padding-bottom: 5rem;
+}
+
+.filme-page svg{
+    color: yellow;
+}
