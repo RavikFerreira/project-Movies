@@ -44,8 +44,26 @@
     display: flex;
     align-items: center;
     cursor: pointer;
-    transition: o.4s;
+    transition: 0.4s;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#favoritos{
+    background-color: rgb(255, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    position: relative;
+    padding: .2rem;
+    font-size: 1.3rem;
+    display: flex;
+    border: none;
+    transition: 0.4s;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+}
+#favoritos:hover{
+    background-color: transparent;
+    color: rgb(98, 0, 0);
 }
 .NavBar form button:hover{
     background-color: transparent;
@@ -57,6 +75,7 @@
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-size: 25px;
+    transition: 0.4s;
 }
 #sair:hover{
     background-color: transparent;
