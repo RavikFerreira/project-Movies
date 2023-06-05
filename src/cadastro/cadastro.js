@@ -1,8 +1,27 @@
-import React from "react";
+import React, {useState} from "react";
 import './cadastro.css';
-import { Link } from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 
 export default function Cadastro(){
+    const [user, setUser] = useState("");
+    const [sobreNome, setSobreNome] = useState("");
+    const [email, setEmail] = useState("");
+    const [emailc, setEmailc] = useState("");
+    const [password, setPassword] = useState("");
+    const navigate = useNavigate();
+
+    const handleCadastro = () => {
+        if (user && sobreNome && email && emailc && password) {
+          if(email === emailc){
+            navigate("/filmes");
+          }else{
+            alert("Os e-mails não coincidem!.");
+          }
+        } else {
+          alert("Por favor, preencha todos os campos.");
+        }
+      };
+
     return(
         <div className="backcadastro">
             <div className="cadastro">
@@ -10,14 +29,13 @@ export default function Cadastro(){
                 <p id="pc">Preencha os campos com seus dados:</p>
                 
                 <div className="nomesobrenome">
-                    <input id="nome" type='text' placeholder='Nome' required="required"></input>
-                    <input id="sobrenome" type='text' placeholder='Sobrenome' required="required"></input>
+                    <input id="nome" type='text' placeholder='Nome' value={user} onChange={(e) => setUser(e.target.value)}/>
+                    <input id="sobrenome" type='text' placeholder='Sobrenome' value={sobreNome} onChange={(e) => setSobreNome(e.target.value)}/>
                 </div>
-                <input id="emailc" type='text' placeholder='Email' required="required"></input>
-                <input id="confirmarEmail" type='text' placeholder='Confirmar email' required="required"></input>
-                <input id="senhac" type='password' placeholder='Senha' required="required"></input>
-                
-                <button id='cadastrar'><Link to='/filmes'><b>Cadastrar</b></Link></button><br/>
+                <input id="emailc" type='text' placeholder='Email' value={email} onChange={(e) => setEmail(e.target.value)}></input>
+                <input id="confirmarEmail" type='text' placeholder='Confirmar email' value={emailc} onChange={(e) => setEmailc(e.target.value)}/>
+                <input id="senhac" type='password' placeholder='Senha' value={password} onChange={(e) => setPassword(e.target.value)}/>
+                <button id='cadastrar' onClick={handleCadastro}>Cadastrar</button><br/>
                 <p id='pc2'>Já tem conta? <Link to={"/"}>Fazer login.</Link></p>
             </div>
             
