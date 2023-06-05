@@ -26,7 +26,7 @@ export default function Home(){
         }
     };
     fetchFilmes();
-     
+    
     },[]);
             
     return(

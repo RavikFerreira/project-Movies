@@ -1,6 +1,11 @@
+
 .backhome{
     background-color: black;
     max-width: 100%;
+    min-height: 100vh;
+    min-width: 100vw;
+    margin: 0;
+    padding: 0;
 }
 .title{
     color: white;
@@ -10,7 +15,7 @@
     
 }
 .title .query-text{
-    color: rgb(154, 3, 3);
+    color: rgb(255, 7, 7);
 
 }
 .filmes_container{

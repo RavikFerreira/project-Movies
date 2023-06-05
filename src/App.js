@@ -8,6 +8,7 @@ import NavBar from './components/NavBar/NavBar';
 import Cadastro from './cadastro/cadastro';
 import Filme from './filme/filme';
 import Home from './home/home';
+import Pesquisa from './Pesquisa/pesquisa';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Route path='/cadastro' element={<Cadastro/>}/>
       <Route path='/filmes' element={<Cadastro/>}/>
       <Route path="filme/:id" element={<Filme />} />
+      <Route path='/pesquisa' element={<Pesquisa/>}/>
       
 
     </Routes>

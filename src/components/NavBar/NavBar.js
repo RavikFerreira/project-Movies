@@ -4,8 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 
 export default function NavBar(){
-    const [pesquisa, setPesquisa] = useState("")
-
+    const [pesquisa, setPesquisa] = useState("");
     const navigate = useNavigate();
 
     const handleSubmit = (e) => {
@@ -13,9 +12,7 @@ export default function NavBar(){
         if(!pesquisa) return
         navigate(`/pesquisa?q=${pesquisa}`);
         setPesquisa("");
-
     };
-
 
     return(
         <nav className="NavBar">
