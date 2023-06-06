@@ -45,7 +45,7 @@
 #texto{
     width: 97%;
     margin-top: 10%;
-    color: rgb(234, 227, 227);
+    color: red;
     font-size: 30px;
 }
 #p{
@@ -59,7 +59,7 @@
 }
 
 #email{
-    background-color: #3c3d42;
+    background-color: white;
     border-radius: 20px;
     padding: 20px;
     outline: unset;
@@ -70,7 +70,7 @@ input::placeholder {
     color: rgb(160, 150, 150);
   }
 #senha{
-    background-color: #3c3d42;
+    background-color: white;
     border-radius: 20px;
     margin-top: 30px;
     padding: 20px;
@@ -79,11 +79,12 @@ input::placeholder {
     border: none;
 }
 #botao{
+    transition: 0.4s;
     background-color: rgb(255, 0, 0);
     color: rgb(211, 207, 207);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 20px;
-    width: 40%;
+    width: 20%;
     padding: 10px;
     border: none;
     border-radius: 30px;
@@ -91,7 +92,13 @@ input::placeholder {
     margin-top: 45px;
     height: 45px;
 }
+#botao:hover{
+    background-color: white;
+    color:  rgb(255, 0, 0);
+}
 
 #p2{
     color: rgb(211, 207, 207);
+    font-size: 15px;
+    text-decoration: none;
 }

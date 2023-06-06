@@ -26,7 +26,7 @@ export default function Cadastro(){
         <div className="backcadastro">
             <div className="cadastro">
                 <h2 id="tituloc">Criar conta</h2>
-                <p id="pc">Preencha os campos com seus dados:</p>
+                <h4 id="pc">Preencha os campos com seus dados:</h4>
                 
                 <div className="nomesobrenome">
                     <input id="nome" type='text' placeholder='Nome' value={user} onChange={(e) => setUser(e.target.value)}/>
@@ -35,6 +35,7 @@ export default function Cadastro(){
                 <input id="emailc" type='text' placeholder='Email' value={email} onChange={(e) => setEmail(e.target.value)}></input>
                 <input id="confirmarEmail" type='text' placeholder='Confirmar email' value={emailc} onChange={(e) => setEmailc(e.target.value)}/>
                 <input id="senhac" type='password' placeholder='Senha' value={password} onChange={(e) => setPassword(e.target.value)}/>
+                <br/>
                 <button id='cadastrar' onClick={handleCadastro}>Cadastrar</button><br/>
                 <p id='pc2'>Já tem conta? <Link to={"/"}>Fazer login.</Link></p>
             </div>
