@@ -18,7 +18,7 @@ export default function NavBar(){
     return(
         <nav className="NavBar">
             <p><Link to='/filmes'>ReelsReview</Link></p>
-            <p><Link id="favoritos" to='/favoritos'>Favoritos</Link></p>
+            <p><Link id="populares" to='/populares'>Filmes Populares</Link></p>
             <form onSubmit={handleSubmit}>
                 <input type="text" placeholder="Procurar filme" 
                 onChange={(e) => setPesquisa(e.target.value)}

@@ -9,7 +9,7 @@ import Cadastro from './cadastro/cadastro';
 import Filme from './filme/filme';
 import Home from './home/home';
 import Pesquisa from './Pesquisa/pesquisa';
-import Favoritos from './favoritos/favoritos';
+import Populares from './populares/populares';
 
 function App() {
   return (
@@ -21,7 +21,7 @@ function App() {
       <Route path='/filmes' element={<Cadastro/>}/>
       <Route path="filme/:id" element={<Filme />} />
       <Route path='/pesquisa' element={<Pesquisa/>}/>
-      <Route path='/favoritos' element={<Favoritos/>}/>
+      <Route path='/populares' element={<Populares/>}/>
       
     </Routes>
     

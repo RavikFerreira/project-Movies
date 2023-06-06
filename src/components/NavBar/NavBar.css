@@ -33,6 +33,8 @@
     padding: .1rem .3rem;
     border-radius: 3px;
     border: none;
+    position: relative;
+    right: 20%;
 }
 .NavBar form button{
     background-color: rgb(255, 0, 0);
@@ -43,11 +45,13 @@
     font-size: 1.3rem;
     display: flex;
     align-items: center;
+    position: relative;
+    right: 22%;
     cursor: pointer;
     transition: 0.4s;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-#favoritos{
+#populares{
     background-color: rgb(255, 0, 0);
     border: 2px solid rgb(0, 0, 0);
     border-radius: 5px;
@@ -61,10 +65,11 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 25px;
 }
-#favoritos:hover{
+#populares:hover{
     background-color: transparent;
     color: rgb(98, 0, 0);
 }
+
 .NavBar form button:hover{
     background-color: transparent;
     color: rgb(98, 0, 0);
