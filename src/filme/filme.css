@@ -6,10 +6,10 @@ body{
 }
 
 .filme-page{
-    background-color: rgb(39, 2, 2);
+    background-color: rgb(16, 13, 13);
     display: flex;
     flex-direction: column;
-    padding: 0;
+    padding: 20px;
     color: white;
     margin: 0 auto;
     text-align: center;
@@ -20,16 +20,16 @@ body{
 }
 .info{
     position: relative;
-    text-align: left;
+    text-align: center;
 }
 #descricao{
     position: relative;
-    text-align: left;
+    text-align: center;
     
 }
 
 .infodescricao{
-    text-align: center;
+    text-align: left;
     max-width: 600px;
     position: relative;
     line-height: 1.4rem;

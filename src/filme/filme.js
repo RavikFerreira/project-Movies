@@ -45,20 +45,20 @@ function Filme() {
         <FilmesCard filme={filme} showLink={false}/>
         <p className="tagline">{filme.tagline}</p>
         <div className="info">
-        <h3>Orçamento: </h3>
-        <p>{formatCurrency(filme.budget)}</p>
+          <h3>Orçament:</h3>
+          <p>{formatCurrency(filme.budget)}</p>
         </div>
         <div className="info">
-        <h3>Receita: </h3>
-        <p>{formatCurrency(filme.revenue)}</p>
+          <h3>Revenue: </h3>
+          <p>{formatCurrency(filme.revenue)}</p>
         </div>
         <div className="info">
-        <h3>Duração: </h3>
-        <p>{filme.runtime} minutos</p>
+          <h3>Duration: </h3>
+          <p>{filme.runtime} minutos</p>
         </div>
         <div className="infodescricao">
-        <h3 id="descricao">Descrição: </h3>
-        <p>{filme.overview}</p>
+          <h3 id="descricao">Description: </h3>
+          <p>{filme.overview}</p>
         </div>
         </>
         )}

@@ -27,7 +27,6 @@ export default function Cadastro(){
             <div className="cadastro">
                 <h2 id="tituloc">Criar conta</h2>
                 <h4 id="pc">Preencha os campos com seus dados:</h4>
-                
                 <div className="nomesobrenome">
                     <input id="nome" type='text' placeholder='Nome' value={user} onChange={(e) => setUser(e.target.value)}/>
                     <input id="sobrenome" type='text' placeholder='Sobrenome' value={sobreNome} onChange={(e) => setSobreNome(e.target.value)}/>
@@ -37,9 +36,8 @@ export default function Cadastro(){
                 <input id="senhac" type='password' placeholder='Senha' value={password} onChange={(e) => setPassword(e.target.value)}/>
                 <br/>
                 <button id='cadastrar' onClick={handleCadastro}>Cadastrar</button><br/>
-                <p id='pc2'>Já tem conta? <Link to={"/"}>Fazer login.</Link></p>
+                <p id='pc2'>Já tem conta? <Link to={"/"} id="link">Fazer login.</Link></p>
             </div>
-            
         </div>
         
     );

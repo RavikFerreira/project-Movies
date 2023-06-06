@@ -1,5 +1,5 @@
 .back{
-    background-image: url(../imagens/background.png);
+    background-image: url(../imagens/background.jpg);
     min-height: 100vh;
     display: flex;
     position: absolute;
@@ -9,14 +9,7 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     overflow: hidden;
 }
-.logo{
-    max-width: 30%;
-    max-height: 20%;
-    position: absolute;
-    top: 12%;
-    left: 12%;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
+
 
 .texto{
     text-shadow: 0px 4px 4px rgba(1, 1, 1, 1.50);
@@ -26,7 +19,6 @@
     left: 12.7%;
     word-break: break-all;
     white-space: nowrap;
-    font-size: 1.1vw;
 }
 
 .login{
@@ -100,5 +92,10 @@ input::placeholder {
 #p2{
     color: rgb(211, 207, 207);
     font-size: 15px;
-    text-decoration: none;
+}
+
+#link{
+    color: rgb(30, 36, 127);
+    font-size: 15px;
+    
 }

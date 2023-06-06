@@ -22,12 +22,12 @@ export default function Login() {
             <h2 id='texto'>Fazer login</h2>
             <p id='p'>Olá, bem-vindo ao ReelsReview!</p>
             <div className='emailesenha'>
-                <input id="email" type="email" placeholder="E-mail" value={user} onChange={(e) => setUser(e.target.value)}/>
+                <input id="email" type="email" placeholder="Digite seu e-mail" value={user} onChange={(e) => setUser(e.target.value)}/>
                 <input id="senha" type="password" placeholder="Digite sua senha" value={password} onChange={(e) => setPassword(e.target.value)}/>
             </div>
             <button  id='botao' onClick={handleLogin}>Entrar</button><br/>
     
-            <p id='p2'>Não tem conta? {<Link to='/cadastro'>Criar conta.</Link>}</p>
+            <p id='p2'>Não tem conta? {<Link to='/cadastro' id='link'>Criar conta.</Link>}</p>
             
         </div>
     </div>
